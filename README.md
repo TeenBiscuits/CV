@@ -1,4 +1,6 @@
 # CV
+![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?logo=latex&logoColor=white)
+[![pages-build-deployment](https://github.com/TeenBiscuits/CV/actions/workflows/pages/pages-build-deployment/badge.svg?branch=build)](https://github.com/TeenBiscuits/CV/actions/workflows/pages/pages-build-deployment)
 
 Mi curriculum vitae automatizado usando LaTex.
 
