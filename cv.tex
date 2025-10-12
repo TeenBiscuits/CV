@@ -1,26 +1,3 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
 %----------------------------------------------------------------------------------------
 %	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
@@ -48,7 +25,14 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
+
+% babel
+\usepackage[spanish]{babel}
+
+% encode
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +47,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +56,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -118,7 +102,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 
@@ -129,7 +113,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -142,12 +126,13 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Pablo Portas López} \\[7.5pt]
+\href{https://github.com/TeenBiscuits}{\raisebox{-0.05\height}\faGithub\ TeenBiscuits} \ $|$ \
+\href{https://linkedin.com/in/pabloportaslopez}{\raisebox{-0.05\height}\faLinkedin\ pabloportaslopez} \ $|$ \
+\href{tel:+34682230593}{\raisebox{-0.05\height}\faMobile \ +34 682 230 593} \ $|$ \
+\href{mailto:pablo.portas@udc.es}{\raisebox{-0.05\height}\faEnvelope \ pablo.portas@udc.es} \\
+\\
+\href{https://www.pablopl.dev}{\raisebox{-0.05\height} \ \faGlobe \ www.pablopl.dev}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,63 +140,121 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+\section{Acerca de mi}
+Soy Pablo Portas López, estudiante de Ingeniería Informática en la Universidad da Coruña, actualmente de Erasmus en la Linnaeus University. Me apasiona el mundo de la tecnología (es mi hobby y ahora mi carrera profesional) y estoy comprometido con el código abierto.
 
 %Experience
-\section{Work Experience}
+\section{Experiencia}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
+\begin{jobshort}{Camarero (Jornada Completa)}{Jul. 2025 - Ago. 2025}
+Bar O Pósito \hfill Cambados, España \\[3.75pt]
+Toda experiencia laboral es importante, es poca mi experiencia, pero es honesta. En este empleo no usé ningún framework pero aprendí a trabajar duro cara el público y adaptarse a situaciones de alto estrés.
 \end{jobshort}
 
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
 %Projects
-\section{Projects}
+\section{Proyectos}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Pásame el Código} & \hfill \href{https://pc.pablopl.dev}{Link a la Web} \\
+Proyecto Personal & \hfill Oct. 2024 - Actualidad \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{Una web open source con apuntes y ejercicios resueltos de las diferentes asignaturas que componen el Grado de Enxeñería Informática da Universidade da Coruña. Derivado de mi proyecto inicial Pro2324 por las limitaciones de usar un programa de documentación, decidí crear un sitio dedicado a la idea de compartir apuntes y ejercicios de la carrera de la manera más cómoda posible. Basándome en la plantilla Starlight creé un sitio en Astro que mantengo actualmente y que trato de mejorar constantemente.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{MandaRef} & \hfill \href{https://github.com/TeenBiscuits/MandaRef}{Link al Repo} \\
+HackUDC 2025 & \hfill Feb. 2025 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{Este proyecto realizado durante la HackUDC 2025 surge de la idea de que los usuarios, puedan encontrar la ropa que ven en un vídeo de Tik Tok o cualquier otra red social, tan solo con una captura de pantalla o buscando por texto con una descripción ded lo que quieren. Para ello, hemos creado una aplicación móvil nativa en React, apoyándonos en la API de Visual Search de Inditex, en la cual, mediante una imagen o un texto, encontramos esa misma prenda y/o prendas relacionadas con ella.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Pro2324} & \hfill \href{https://github.com/TeenBiscuits/Pro2324}{Link al Repo} \\
+Proyecto Personal & \hfill Ene. 2024 - Oct. 2024 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{Una pequeña página web open source que construí en primero de carrera y mantuve, con pequeñas contribuciones de compañeros de carrera, para ayudar a otros a entender y superar las asignaturas de Programación 1 y 2. El contenido de la web fue escrito en su amplia mayoría por mi, contaba tanto con apuntes detallados como con cientos de ejemplos y ejercicios resueltos en el lenguaje de programación C. Fue un proyecto pequeño pero que guardo con cariño.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{CronoSquare} & \hfill \href{https://github.com/TeenBiscuits/CronoSquare}{Link al Repo} \\
+HackUDC 2024 & \hfill Feb. 2024 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{Un pequeño minijuego de rompecabezas creado en HTML5 para la HackUDC 2024. Ganador del Premio GPUL x INDITEX Tech al proyecto más original.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Criptografía} \\
+Proyecto de STEMbach & \hfill Sep. 2021 - Jun. 2023 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{El objetivo de este trabajo es conocer y comprender los conceptos básicos del sistema RSA para poder enviar mensajes de forma segura. En primer lugar, para entender el RSA recogeremos los fundamentos matemáticos que lo sustentan y nos centraremos en su eficacia en relación al tiempo necesario para romperlo. Además, pondremos en práctica el algoritmo con una construcción teórica. Finalmente, se discutirá por qué las computadoras cuánticas pueden romper este sistema y suponer un riesgo actual.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\section{Educación}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2023 - present & Ingeniería Informática, Computación,  \textbf{Universidade da Coruña} \hfill \normalsize \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+2025 - 2026 & Erasmus Program, Computer Science, \textbf{Linnéuniversitetet} \\
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+2021 - 2023 & STEMbach, Matemáticas e Informática, \textbf{Universidade de Santiago de Compostela} \hfill  (Superado) \\
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
+2021 - 2023 & Bachillerato, Ciencias y Tecnología, \textbf{IES Ramón Cabanillas} \hfill  (9,05) \\
+
+2017 - 2021 & Educación Secundaria Obligatoria, \textbf{IES Ramón Cabanillas} \\
+
+2011 - 2017 & Educación Primaria, \textbf{CEP Antonio Magariños Pastoriza} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	LICENCIAS Y CERTIFICACIONES
+%----------------------------------------------------------------------------------------
+
+\section{Licencias y Certificaciones}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Cambridge English} & B2 First \hfill \normalsize (Score 174)\\
+
+\textbf{Dirección General de Tráfico} & Permiso de Conducción B \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTARIADO
+%----------------------------------------------------------------------------------------
+
+\section{Voluntariado}
+
+\begin{jobshort}{Voluntario}{Nov. 2024 - Actualidad}
+Cruz Roja Española \hfill A Coruña, España \\[3.75pt]
+Voluntario en el departamento de Socorros y Emergencias de A Coruña.
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%  LANGUAGES
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{English Upper-Intermediate} & \hfill Cambridge English \\
+\textbf{Gallego Nativo} \\
+\textbf{Español Nativo}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+%\section{Publications}
+%\begin{refsection}[citations.bib]
+%\nocite{*}
+%\printbibliography[heading=none]
+%\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
+%\section{Skills}
+%\begin{tabularx}{\linewidth}{@{}l X@{}}
+%Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
+%Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\
+%\end{tabularx}
 
 \vfill
-\center{\footnotesize Last updated: \today}
+\center{\footnotesize Última actualización: \today}
 
 \end{document}
