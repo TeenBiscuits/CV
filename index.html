@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+
+        <!--You can add your name and affiliation below to personalise -->
+        <meta property="og:title" content="Curriculum de Pablo Portas López" />
+
+        <!--You can add your keywords to personalise-->
+        <meta
+            property="og:description"
+            content="Educación, Experiencia, Proyectos, Voluntariado, etc."
+        />
+        <meta property="og:image" content="/icons/og.jpg" />
+        <title>Curriculum de Pablo Portas López</title>
+
+        <!-- Favicons -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/icons/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+        <link rel="shortcut icon" href="/icons/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/icons/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Pablo CV" />
+        <link rel="manifest" href="/icons/site.webmanifest" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Get browser language
+            const userLang = navigator.language || navigator.userLanguage;
+
+            // Check if language is Spanish (es, es-ES, es-MX, etc.)
+            const isSpanish = userLang.toLowerCase().startsWith("es");
+
+            // Redirect to appropriate CV
+            window.location.href = isSpanish ? "./cv.pdf" : "./cv_en.pdf";
+        </script>
+    </body>
+</html>
