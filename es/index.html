@@ -33,14 +33,7 @@
     </head>
     <body>
         <script type="text/javascript">
-            // Get browser language
-            const userLang = navigator.language || navigator.userLanguage;
-
-            // Check if language is Spanish (es, es-ES, es-MX, etc.)
-            const isSpanish = userLang.toLowerCase().startsWith("es");
-
-            // Redirect to appropriate CV
-            window.location.href = isSpanish ? "./cv.pdf" : "./cv_en.pdf";
+            window.location.href = "/cv.pdf";
         </script>
     </body>
 </html>
