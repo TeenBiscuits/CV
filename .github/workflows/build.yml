@@ -3,24 +3,7 @@
 name: build
 on: [push]
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    outputs:
-      latex_changed: ${{ steps.filter.outputs.latex }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Check for changes in .tex or .bib files
-        uses: dorny/paths-filter@v3
-        id: filter
-        with:
-          filters: |
-            latex:
-              - '**.tex'
-              - '**.bib'
   build:
-    needs: check
-    if: needs.check.outputs.latex_changed == 'true'
     runs-on: ubuntu-latest
     env:
       DIR: .
@@ -50,18 +33,15 @@ jobs:
           name: cv_en.pdf
           path: ./github_artifacts/cv_en.pdf
   deploy:
-    needs: [check, build]
-    if: always() && needs.check.result == 'success'
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
-        if: needs.check.outputs.latex_changed == 'true'
         with:
           path: github_artifacts
       - name: move
-        if: needs.check.outputs.latex_changed == 'true'
         run: mkdir -p github_deploy && mv github_artifacts/*/* github_deploy
       - name: deploy on orphan branch
         uses: peaceiris/actions-gh-pages@v4
