@@ -3,7 +3,22 @@
 name: build
 on: [push]
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      latex: ${{ steps.filter.outputs.latex }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            latex:
+              - '**.tex'
+              - '**.bib'
   build:
+    needs: check
+    if: needs.check.outputs.latex == 'true'
     runs-on: ubuntu-latest
     env:
       DIR: .
@@ -33,7 +48,8 @@ jobs:
           name: cv_en.pdf
           path: ./github_artifacts/cv_en.pdf
   deploy:
-    needs: [build]
+    needs: [check, build]
+    if: needs.check.outputs.latex == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -52,7 +68,8 @@ jobs:
           force_orphan: true
           enable_jekyll: true
   copy-index-to-build:
-    needs: [deploy]
+    needs: [check, deploy]
+    if: always() && needs.check.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
