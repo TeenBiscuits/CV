@@ -1,0 +1,260 @@
+%----------------------------------------------------------------------------------------
+%   DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%   FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+
+% babel
+\usepackage[english]{babel}
+
+% encode
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%   BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%   TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Pablo Portas López} \\[7.5pt]
+\href{https://github.com/TeenBiscuits}{\raisebox{-0.05\height}\faGithub\ TeenBiscuits} \ $|$ \
+\href{https://linkedin.com/in/pabloportaslopez}{\raisebox{-0.05\height}\faLinkedin\ pabloportaslopez} \ $|$ \
+\href{tel:+34682230593}{\raisebox{-0.05\height}\faMobile \ +34 682 230 593} \ $|$ \
+\href{mailto:pablo.portas@udc.es}{\raisebox{-0.05\height}\faEnvelope \ pablo.portas@udc.es} \\
+\\
+\href{https://www.pablopl.dev}{\raisebox{-0.05\height} \ \faGlobe \ www.pablopl.dev}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{About Me}
+I am Pablo Portas López, a Computer Engineering student at the University of A Coruña, currently on Erasmus at Linnaeus University. I am passionate about technology (it’s my hobby and now my professional path) and I am committed to open source.
+
+%Experience
+\section{Experience}
+
+\begin{jobshort}{Waiter (Full Time)}{Jul. 2025 - Aug. 2025}
+Bar O Pósito \hfill Cambados, Spain \\[3.75pt]
+All work experience is valuable. My experience may be limited, but it is honest. In this job I didn’t use any framework, but I learned to work hard facing the public and to adapt to high-stress situations.
+\end{jobshort}
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Pass Me the Code} & \hfill \href{https://pc.pablopl.dev}{Website Link} \\
+Personal Project & \hfill Oct. 2024 - Present \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{An open-source website with notes and solved exercises from the different subjects that make up the Computer Engineering degree at the University of A Coruña. Derived from my initial project Pro2324 due to the limitations of using a documentation program, I decided to create a site dedicated to the idea of sharing course notes and exercises in the most convenient way possible. Based on the Starlight template, I created a site in Astro that I currently maintain and continually try to improve.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{MandaRef} & \hfill \href{https://github.com/TeenBiscuits/MandaRef}{Repo Link} \\
+HackUDC 2025 & \hfill Feb. 2025 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{This project, developed during HackUDC 2025, stems from the idea that users can find the clothes they see in a TikTok video or any other social network with just a screenshot, or by searching text with a description of what they want. To achieve this, we built a native mobile application in React, leveraging Inditex’s Visual Search API, which, using an image or text, finds that same garment and/or related items.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Pro2324} & \hfill \href{https://github.com/TeenBiscuits/Pro2324}{Repo Link} \\
+Personal Project & \hfill Jan. 2024 - Oct. 2024 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{A small open-source website I built in my first year and maintained, with small contributions from classmates, to help others understand and pass Programming 1 and 2. The site’s content was written mostly by me and included detailed notes as well as hundreds of examples and solved exercises in the C programming language. It was a small project, but one I look back on fondly.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{CronoSquare} & \hfill \href{https://github.com/TeenBiscuits/CronoSquare}{Repo Link} \\
+HackUDC 2024 & \hfill Feb. 2024 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{A small HTML5 puzzle minigame created for HackUDC 2024. Winner of the GPUL x INDITEX Tech Award for the most original project.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Cryptography} \\
+STEMbach Project & \hfill Sep. 2021 - Jun. 2023 \\ [3.75pt]
+\multicolumn{2}{@{}X@{}}{The goal of this work is to learn and understand the basic concepts of the RSA system to be able to send messages securely. First, to understand RSA, we will cover the mathematical foundations that support it and focus on its effectiveness in relation to the time required to break it. In addition, we will put the algorithm into practice with a theoretical construction. Finally, we will discuss why quantum computers can break this system and pose a current risk.}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2023 - present & Computer Engineering, Computing, \textbf{University of A Coruña} \hfill \normalsize \\
+
+2025 - 2026 & Erasmus Program, Computer Science, \textbf{Linnaeus University} \\
+
+2021 - 2023 & STEMbach, Mathematics and Computer Science, \textbf{University of Santiago de Compostela} \hfill  (Completed) \\
+
+2021 - 2023 & Baccalaureate, Science and Technology, \textbf{IES Ramón Cabanillas} \hfill  (9.05/10) \\
+
+2017 - 2021 & Compulsory Secondary Education, \textbf{IES Ramón Cabanillas} \\
+
+2011 - 2017 & Primary Education, \textbf{CEP Antonio Magariños Pastoriza} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   LICENSES AND CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Licenses and Certifications}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Cambridge English} & B2 First \hfill \normalsize (Score 174)\\
+
+\textbf{Spanish Directorate-General for Traffic} & Driving License B \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   VOLUNTEERING
+%----------------------------------------------------------------------------------------
+
+\section{Volunteering}
+
+\begin{jobshort}{Volunteer}{Nov. 2024 - Present}
+Spanish Red Cross \hfill A Coruña, Spain \\[3.75pt]
+Volunteer in the Emergency and Relief department in A Coruña.
+\end{jobshort}
+
+%----------------------------------------------------------------------------------------
+%  LANGUAGES
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{English Upper-Intermediate} & \hfill Cambridge English \\
+\textbf{Galician Native} \\
+\textbf{Spanish Native}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   PUBLICATIONS
+%----------------------------------------------------------------------------------------
+%\section{Publications}
+%\begin{refsection}[citations.bib]
+%\nocite{*}
+%\printbibliography[heading=none]
+%\end{refsection}
+
+%----------------------------------------------------------------------------------------
+%   SKILLS
+%----------------------------------------------------------------------------------------
+%\section{Skills}
+%\begin{tabularx}{\linewidth}{@{}l X@{}}
+%Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
+%Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\
+%\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
