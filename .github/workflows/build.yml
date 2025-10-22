@@ -83,4 +83,4 @@ jobs:
         env:
           key: main
           branches: build
-          files: index.html CNAME icons/* en/index.html es/index.html
+          files: index.html 404.html CNAME icons/* en/index.html es/index.html
