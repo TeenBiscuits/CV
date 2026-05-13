@@ -9,3 +9,5 @@
 *.pdf
 *.run.xml
 *.synctex.gz
+node_modules
+*.tex
