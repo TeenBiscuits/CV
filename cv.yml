@@ -32,7 +32,7 @@ content:
       startDate: "2024-10"
       summary: >
         Una web open source con apuntes y ejercicios resueltos de las diferentes asignaturas que componen el Grado de Enxeñería Informática da Universidade da Coruña. Derivado de mi proyecto inicial Pro2324 por las limitaciones de usar un programa de documentación, decidí crear un sitio dedicado a la idea de compartir apuntes y ejercicios de la carrera de la manera más cómoda posible. Basándome en la plantilla Starlight creé un sitio en Astro que mantengo actualmente y que trato de mejorar constantemente.
-    
+
     - name: MandaRef
       description: HackUDC 2025
       url: https://github.com/TeenBiscuits/MandaRef
@@ -40,7 +40,7 @@ content:
       endDate: "2025-02"
       summary: >
         Este proyecto realizado durante la HackUDC 2025 surge de la idea de que los usuarios, puedan encontrar la ropa que ven en un vídeo de Tik Tok o cualquier otra red social, tan solo con una captura de pantalla o buscando por texto con una descripción ded lo que quieren. Para ello, hemos creado una aplicación móvil nativa en React, apoyándonos en la API de Visual Search de Inditex, en la cual, mediante una imagen o un texto, encontramos esa misma prenda y/o prendas relacionadas con ella.
-    
+
     - name: Pro2324
       description: Proyecto Personal
       url: https://github.com/TeenBiscuits/Pro2324
@@ -48,7 +48,7 @@ content:
       endDate: "2024-10"
       summary: >
         Una pequeña página web open source que construí en primero de carrera y mantuve, con pequeñas contribuciones de compañeros de carrera, para ayudar a otros a entender y superar las asignaturas de Programación 1 y 2. El contenido de la web fue escrito en su amplia mayoría por mi, contaba tanto con apuntes detallados como con cientos de ejemplos y ejercicios resueltos en el lenguaje de programación C. Fue un proyecto pequeño pero que guardo con cariño.
-    
+
     - name: CronoSquare
       description: HackUDC 2024
       url: https://github.com/TeenBiscuits/CronoSquare
@@ -56,7 +56,7 @@ content:
       endDate: "2024-02"
       summary: >
         Un pequeño minijuego de rompecabezas creado en HTML5 para la HackUDC 2024. Ganador del Premio GPUL x INDITEX Tech al proyecto más original.
-    
+
     - name: Criptografía
       description: Proyecto de STEMbach
       startDate: "2021-09"
@@ -69,20 +69,20 @@ content:
       area: Ingeniería Informática, Computación
       degree: Bachelor
       startDate: "2023-09"
-      
+
     - institution: Linnéuniversitetet
       area: Erasmus Program, Computer Science
       degree: Bachelor
       startDate: "2025-09"
       endDate: "2026-06"
-      
+
     - institution: Universidade de Santiago de Compostela
       area: STEMbach, Matemáticas e Informática
       degree: High School
       startDate: "2021-09"
       endDate: "2023-06"
       score: Superado
-      
+
     - institution: IES Ramón Cabanillas
       area: Bachillerato, Ciencias y Tecnología
       degree: High School
@@ -93,7 +93,7 @@ content:
   certificates:
     - name: B2 First (Score 174)
       issuer: Cambridge English
-      
+
     - name: Permiso de Conducción B
       issuer: Dirección General de Tráfico
 
@@ -115,6 +115,6 @@ locale:
 
 layouts:
   - engine: latex
-    template: moderncv-classic
+    template: moderncv-banking
     typography:
       fontSize: 11pt
