@@ -2,122 +2,128 @@
 cv:
   name: Pablo Portas López
   email: pablo.portas@udc.es
-  phone: +34 682 230 593
+  phone: "+34682230593"
   website: https://www.pablopl.dev
   social_networks:
-  - network: GitHub
-    username: TeenBiscuits
-  - network: LinkedIn
-    username: pabloportaslopez
+    - network: GitHub
+      username: TeenBiscuits
+    - network: LinkedIn
+      username: pabloportaslopez
   sections:
     sobre_mi:
-    - Soy Pablo Portas López, estudiante de Ingeniería Informática en la Universidad
-      da Coruña, actualmente de Erasmus en la Linnaeus University. Me apasiona el
-      mundo de la tecnología (es mi hobby y ahora mi carrera profesional) y estoy
-      comprometido con el código abierto.
+      - Soy Pablo Portas López, estudiante de Ingeniería Informática en la Universidad
+        da Coruña, actualmente de Erasmus en la Linnaeus University. Me apasiona el
+        mundo de la tecnología (es mi hobby y ahora mi carrera profesional) y estoy
+        comprometido con el código abierto.
     educacion:
-    - institution: Universidade da Coruña
-      area: Ingeniería Informática, Computación
-      degree: Bachelor
-      start_date: 2023-09
-    - institution: Linnéuniversitetet
-      area: Erasmus Program, Computer Science
-      degree: Bachelor
-      start_date: 2025-09
-      end_date: 2026-06
-    - institution: Universidade de Santiago de Compostela
-      area: STEMbach, Matemáticas e Informática
-      degree: High School
-      start_date: 2021-09
-      end_date: 2023-06
-      highlights:
-      - 'Nota: Superado'
-    - institution: IES Ramón Cabanillas
-      area: Bachillerato, Ciencias y Tecnología
-      degree: High School
-      start_date: 2021-09
-      end_date: 2023-06
-      highlights:
-      - 'Nota: 9,05'
+      - institution: Universidade da Coruña
+        area: Ingeniería Informática, Computación
+        degree: GII
+        start_date: 2023-09
+      - institution: Linnéuniversitetet
+        area: Erasmus Program, Computer Science
+        degree: BS
+        start_date: 2025-09
+        end_date: 2026-06
+      - institution: Universidade de Santiago de Compostela
+        area: STEMbach, Matemáticas e Informática
+        degree: BCT
+        start_date: 2021-09
+        end_date: 2023-06
+        highlights:
+          - "Nota: Superado"
+      - institution: IES Ramón Cabanillas
+        area: Bachillerato, Ciencias y Tecnología
+        degree: BCT
+        start_date: 2021-09
+        end_date: 2023-06
+        highlights:
+          - "Nota: 9,05"
     experiencia:
-    - company: Bar O Pósito
-      position: Camarero (Jornada Completa)
-      location: Cambados, España
-      summary: Toda experiencia laboral es importante, es poca mi experiencia, pero
-        es honesta. En este empleo no usé ningún framework pero aprendí a trabajar
-        duro cara el público y adaptarse a situaciones de alto estrés.
-      start_date: 2025-07
-      end_date: 2025-08
+      - company: Bar O Pósito
+        position: Camarero (Jornada Completa)
+        location: Cambados, España
+        summary:
+          Toda experiencia laboral es importante, es poca mi experiencia, pero
+          es honesta. En este empleo no usé ningún framework pero aprendí a trabajar
+          duro cara el público y adaptarse a situaciones de alto estrés.
+        start_date: 2025-07
+        end_date: 2025-08
     proyectos:
-    - name: '[Pásame el Código](https://pc.pablopl.dev)'
-      summary: Una web open source con apuntes y ejercicios resueltos de las diferentes
-        asignaturas que componen el Grado de Enxeñería Informática da Universidade
-        da Coruña. Derivado de mi proyecto inicial Pro2324 por las limitaciones de
-        usar un programa de documentación, decidí crear un sitio dedicado a la idea
-        de compartir apuntes y ejercicios de la carrera de la manera más cómoda posible.
-        Basándome en la plantilla Starlight creé un sitio en Astro que mantengo actualmente
-        y que trato de mejorar constantemente.
-      start_date: 2024-10
-      highlights:
-      - Proyecto Personal
-    - name: '[MandaRef](https://github.com/TeenBiscuits/MandaRef)'
-      summary: Este proyecto realizado durante la HackUDC 2025 surge de la idea de
-        que los usuarios, puedan encontrar la ropa que ven en un vídeo de Tik Tok
-        o cualquier otra red social, tan solo con una captura de pantalla o buscando
-        por texto con una descripción ded lo que quieren. Para ello, hemos creado
-        una aplicación móvil nativa en React, apoyándonos en la API de Visual Search
-        de Inditex, en la cual, mediante una imagen o un texto, encontramos esa misma
-        prenda y/o prendas relacionadas con ella.
-      start_date: 2025-02
-      end_date: 2025-02
-      highlights:
-      - HackUDC 2025
-    - name: '[Pro2324](https://github.com/TeenBiscuits/Pro2324)'
-      summary: Una pequeña página web open source que construí en primero de carrera
-        y mantuve, con pequeñas contribuciones de compañeros de carrera, para ayudar
-        a otros a entender y superar las asignaturas de Programación 1 y 2. El contenido
-        de la web fue escrito en su amplia mayoría por mi, contaba tanto con apuntes
-        detallados como con cientos de ejemplos y ejercicios resueltos en el lenguaje
-        de programación C. Fue un proyecto pequeño pero que guardo con cariño.
-      start_date: 2024-01
-      end_date: 2024-10
-      highlights:
-      - Proyecto Personal
-    - name: '[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)'
-      summary: Un pequeño minijuego de rompecabezas creado en HTML5 para la HackUDC
-        2024. Ganador del Premio GPUL x INDITEX Tech al proyecto más original.
-      start_date: 2024-02
-      end_date: 2024-02
-      highlights:
-      - HackUDC 2024
-    - name: Criptografía
-      summary: El objetivo de este trabajo es conocer y comprender los conceptos básicos
-        del sistema RSA para poder enviar mensajes de forma segura. En primer lugar,
-        para entender el RSA recogeremos los fundamentos matemáticos que lo sustentan
-        y nos centraremos en su eficacia en relación al tiempo necesario para romperlo.
-        Además, pondremos en práctica el algoritmo con una construcción teórica. Finalmente,
-        se discutirá por qué las computadoras cuánticas pueden romper este sistema
-        y suponer un riesgo actual.
-      start_date: 2021-09
-      end_date: 2023-06
-      highlights:
-      - Proyecto de STEMbach
+      - name: "[Pásame el Código](https://pc.pablopl.dev)"
+        summary:
+          Una web open source con apuntes y ejercicios resueltos de las diferentes
+          asignaturas que componen el Grado de Enxeñería Informática da Universidade
+          da Coruña. Derivado de mi proyecto inicial Pro2324 por las limitaciones de
+          usar un programa de documentación, decidí crear un sitio dedicado a la idea
+          de compartir apuntes y ejercicios de la carrera de la manera más cómoda posible.
+          Basándome en la plantilla Starlight creé un sitio en Astro que mantengo actualmente
+          y que trato de mejorar constantemente.
+        start_date: 2024-10
+        highlights:
+          - Proyecto Personal
+      - name: "[MandaRef](https://github.com/TeenBiscuits/MandaRef)"
+        summary:
+          Este proyecto realizado durante la HackUDC 2025 surge de la idea de
+          que los usuarios, puedan encontrar la ropa que ven en un vídeo de Tik Tok
+          o cualquier otra red social, tan solo con una captura de pantalla o buscando
+          por texto con una descripción ded lo que quieren. Para ello, hemos creado
+          una aplicación móvil nativa en React, apoyándonos en la API de Visual Search
+          de Inditex, en la cual, mediante una imagen o un texto, encontramos esa misma
+          prenda y/o prendas relacionadas con ella.
+        start_date: 2025-02
+        end_date: 2025-02
+        highlights:
+          - HackUDC 2025
+      - name: "[Pro2324](https://github.com/TeenBiscuits/Pro2324)"
+        summary:
+          Una pequeña página web open source que construí en primero de carrera
+          y mantuve, con pequeñas contribuciones de compañeros de carrera, para ayudar
+          a otros a entender y superar las asignaturas de Programación 1 y 2. El contenido
+          de la web fue escrito en su amplia mayoría por mi, contaba tanto con apuntes
+          detallados como con cientos de ejemplos y ejercicios resueltos en el lenguaje
+          de programación C. Fue un proyecto pequeño pero que guardo con cariño.
+        start_date: 2024-01
+        end_date: 2024-10
+        highlights:
+          - Proyecto Personal
+      - name: "[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)"
+        summary:
+          Un pequeño minijuego de rompecabezas creado en HTML5 para la HackUDC
+          2024. Ganador del Premio GPUL x INDITEX Tech al proyecto más original.
+        start_date: 2024-02
+        end_date: 2024-02
+        highlights:
+          - HackUDC 2024
+      - name: Criptografía
+        summary:
+          El objetivo de este trabajo es conocer y comprender los conceptos básicos
+          del sistema RSA para poder enviar mensajes de forma segura. En primer lugar,
+          para entender el RSA recogeremos los fundamentos matemáticos que lo sustentan
+          y nos centraremos en su eficacia en relación al tiempo necesario para romperlo.
+          Además, pondremos en práctica el algoritmo con una construcción teórica. Finalmente,
+          se discutirá por qué las computadoras cuánticas pueden romper este sistema
+          y suponer un riesgo actual.
+        start_date: 2021-09
+        end_date: 2023-06
+        highlights:
+          - Proyecto de STEMbach
     voluntariado:
-    - company: Cruz Roja Española
-      position: Voluntario
-      location: A Coruña, España
-      summary: Voluntario en el departamento de Socorros y Emergencias de A Coruña.
-      start_date: 2024-11
+      - company: Cruz Roja Española
+        position: Voluntario
+        location: A Coruña, España
+        summary: Voluntario en el departamento de Socorros y Emergencias de A Coruña.
+        start_date: 2024-11
     certificados:
-    - name: B2 First (Score 174)
-      summary: Cambridge English
-    - name: Permiso de Conducción B
-      summary: Dirección General de Tráfico
+      - name: B2 First (Score 174)
+        summary: Cambridge English
+      - name: Permiso de Conducción B
+        summary: Dirección General de Tráfico
     idiomas:
-    - label: English
-      details: Full Professional Proficiency
-    - label: Spanish
-      details: Native or Bilingual Proficiency
+      - label: English
+        details: Full Professional Proficiency
+      - label: Spanish
+        details: Native or Bilingual Proficiency
 design:
   theme: classic
   typography:
