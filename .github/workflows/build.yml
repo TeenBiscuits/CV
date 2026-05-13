@@ -23,29 +23,34 @@ jobs:
     needs: check
     if: needs.check.outputs.resume == 'true'
     runs-on: ubuntu-latest
-    env:
-      DIR: .
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: Build resumes
-        uses: yamlresume/action@v0.2.2
-        with:
-          resumes: |
-            cv.yml
-            cv_en.yml
+        
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        
+      - name: Build resumes with RenderCV
+        run: |
+          uv tool install "rendercv[full]"
+          rendercv render cv.yaml --pdf-path cv.pdf --dont-generate-html --dont-generate-markdown --dont-generate-png
+          rendercv render cv_en.yaml --pdf-path cv_en.pdf --dont-generate-html --dont-generate-markdown --dont-generate-png
+          
       - name: move
         run: mkdir -p github_artifacts && mv cv.pdf cv_en.pdf ./github_artifacts/
+        
       - name: Upload cv.pdf as artifact
         uses: actions/upload-artifact@v4
         with:
           name: cv.pdf
           path: ./github_artifacts/cv.pdf
+          
       - name: Upload cv_en.pdf as artifact
         uses: actions/upload-artifact@v4
         with:
           name: cv_en.pdf
           path: ./github_artifacts/cv_en.pdf
+          
   deploy:
     needs: [check, build]
     if: needs.check.outputs.resume == 'true'
@@ -66,6 +71,7 @@ jobs:
           publish_branch: build
           force_orphan: true
           enable_jekyll: true
+          
   copy-index-to-build:
     needs: [check, deploy]
     if: always() && needs.check.result == 'success'

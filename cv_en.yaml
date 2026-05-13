@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Pablo Portas López
+  email: pablo.portas@udc.es
+  phone: +34 682 230 593
+  website: https://www.pablopl.dev
+  social_networks:
+  - network: GitHub
+    username: TeenBiscuits
+  - network: LinkedIn
+    username: pabloportaslopez
+  sections:
+    about_me:
+    - I am Pablo Portas López, a Computer Engineering student at the University of
+      A Coruña, currently on Erasmus at Linnaeus University. I am passionate about
+      technology (it’s my hobby and now my professional path) and I am committed to
+      open source.
+    education:
+    - institution: University of A Coruña
+      area: Computer Engineering, Computing
+      degree: Bachelor
+      start_date: 2023-09
+    - institution: Linnaeus University
+      area: Erasmus Program, Computer Science
+      degree: Bachelor
+      start_date: 2025-09
+      end_date: 2026-06
+    - institution: University of Santiago de Compostela
+      area: STEMbach, Mathematics and Computer Science
+      degree: High School
+      start_date: 2021-09
+      end_date: 2023-06
+      highlights:
+      - 'Score: Completed'
+    - institution: IES Ramón Cabanillas
+      area: Baccalaureate, Science and Technology
+      degree: High School
+      start_date: 2021-09
+      end_date: 2023-06
+      highlights:
+      - 'Score: 9.05/10'
+    experience:
+    - company: Bar O Pósito
+      position: Waiter (Full Time)
+      location: Cambados, Spain
+      summary: All work experience is valuable. My experience may be limited, but
+        it is honest. In this job I didn’t use any framework, but I learned to work
+        hard facing the public and to adapt to high-stress situations.
+      start_date: 2025-07
+      end_date: 2025-08
+    projects:
+    - name: '[Pass Me the Code](https://pc.pablopl.dev)'
+      summary: An open-source website with notes and solved exercises from the different
+        subjects that make up the Computer Engineering degree at the University of
+        A Coruña. Derived from my initial project Pro2324 due to the limitations of
+        using a documentation program, I decided to create a site dedicated to the
+        idea of sharing course notes and exercises in the most convenient way possible.
+        Based on the Starlight template, I created a site in Astro that I currently
+        maintain and continually try to improve.
+      start_date: 2024-10
+      highlights:
+      - Personal Project
+    - name: '[MandaRef](https://github.com/TeenBiscuits/MandaRef)'
+      summary: This project, developed during HackUDC 2025, stems from the idea that
+        users can find the clothes they see in a TikTok video or any other social
+        network with just a screenshot, or by searching text with a description of
+        what they want. To achieve this, we built a native mobile application in React,
+        leveraging Inditex’s Visual Search API, which, using an image or text, finds
+        that same garment and/or related items.
+      start_date: 2025-02
+      end_date: 2025-02
+      highlights:
+      - HackUDC 2025
+    - name: '[Pro2324](https://github.com/TeenBiscuits/Pro2324)'
+      summary: A small open-source website I built in my first year and maintained,
+        with small contributions from classmates, to help others understand and pass
+        Programming 1 and 2. The site’s content was written mostly by me and included
+        detailed notes as well as hundreds of examples and solved exercises in the
+        C programming language. It was a small project, but one I look back on fondly.
+      start_date: 2024-01
+      end_date: 2024-10
+      highlights:
+      - Personal Project
+    - name: '[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)'
+      summary: A small HTML5 puzzle minigame created for HackUDC 2024. Winner of the
+        GPUL x INDITEX Tech Award for the most original project.
+      start_date: 2024-02
+      end_date: 2024-02
+      highlights:
+      - HackUDC 2024
+    - name: Cryptography
+      summary: The goal of this work is to learn and understand the basic concepts
+        of the RSA system to be able to send messages securely. First, to understand
+        RSA, we will cover the mathematical foundations that support it and focus
+        on its effectiveness in relation to the time required to break it. In addition,
+        we will put the algorithm into practice with a theoretical construction. Finally,
+        we will discuss why quantum computers can break this system and pose a current
+        risk.
+      start_date: 2021-09
+      end_date: 2023-06
+      highlights:
+      - STEMbach Project
+    volunteer_experience:
+    - company: Spanish Red Cross
+      position: Volunteer
+      location: A Coruña, Spain
+      summary: Volunteer in the Emergency and Relief department in A Coruña.
+      start_date: 2024-11
+    certificates:
+    - name: B2 First (Score 174)
+      summary: Cambridge English
+    - name: Driving License B
+      summary: Spanish Directorate-General for Traffic
+    languages:
+    - label: English
+      details: Full Professional Proficiency
+    - label: Spanish
+      details: Native or Bilingual Proficiency
+design:
+  theme: classic
+  typography:
+    font_size:
+      body: 11pt
+locale:
+  language: english

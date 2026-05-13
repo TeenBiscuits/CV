@@ -11,3 +11,5 @@
 *.synctex.gz
 node_modules
 *.tex
+
+rendercv_output/
