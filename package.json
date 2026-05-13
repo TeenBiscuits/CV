@@ -1,0 +1,13 @@
+{
+  "name": "cv",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "yamlresume": "^0.12.3"
+  },
+  "scripts": {
+    "build": "yamlresume build --no-pdf cv.yml && yamlresume build --no-pdf cv_en.yml && sed -i '' '/\\\\usepackage.*ctex/d' cv.tex cv_en.tex && xelatex -halt-on-error cv.tex && xelatex -halt-on-error cv_en.tex",
+    "dev": "yamlresume dev cv.yml",
+    "dev:en": "yamlresume dev cv_en.yml"
+  }
+}
