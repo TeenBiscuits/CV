@@ -1,10 +1,10 @@
 # Curriculum Vitæ
-![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?logo=latex&logoColor=white)
+[![RenderCV](https://img.shields.io/badge/RenderCV-v2.8-blue?logo=python&logoColor=white)](https://github.com/rendercv/rendercv)
 [![pages-build-deployment](https://github.com/TeenBiscuits/CV/actions/workflows/pages/pages-build-deployment/badge.svg?branch=build)](https://github.com/TeenBiscuits/CV/actions/workflows/pages/pages-build-deployment)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fcv.pablopl.dev)](https://cv.pablopl.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pabloportaslopez)
 
-Mi curriculum vitae **automatizado** usando LaTex y GitHub Actions.
+Mi currículum vitae **automatizado** mantenido en formato YAML y generado usando [RenderCV](https://rendercv.com/) y GitHub Actions.
 
 |🇺🇳 Auto-detect|🇪🇸 Español|🇬🇧 English|
 |---|---|---|
@@ -12,4 +12,22 @@ Mi curriculum vitae **automatizado** usando LaTex y GitHub Actions.
 
 ---
 
-Basado en el repositorio de [jitinnair1/autoCV](https://github.com/jitinnair1/autoCV) y [MateusRosario/myAutoCV](https://github.com/MateusRosario/myAutoCV).
+## Desarrollo Local
+
+Para visualizar y compilar los PDFs en tu entorno local, es recomendable tener instalado [`uv`](https://docs.astral.sh/uv/) y usar los comandos definidos en el `Makefile`. 
+
+El proyecto instalará automáticamente `rendercv` a través de `uv tool` de forma aislada.
+
+```bash
+# Compilar el currículum en español
+make build
+
+# Compilar el currículum en inglés
+make build-en
+
+# Iniciar modo watch para recarga automática al hacer cambios (Español)
+make dev
+
+# Iniciar modo watch (Inglés)
+make dev-en
+```
