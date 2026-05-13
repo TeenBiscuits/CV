@@ -11,121 +11,104 @@ cv:
       username: pabloportaslopez
   sections:
     about_me:
-      - I am Pablo Portas López, a Computer Engineering student at the University of
-        A Coruña, currently on Erasmus at Linnaeus University. I am passionate about
-        technology (it’s my hobby and now my professional path) and I am committed to
-        open source.
+      - Undergraduate student in Computer Engineering at UDC, currently on an Erasmus exchange at Linnaeus University. Passionate about software development and open source. Problem-solving oriented, with strong adaptability and teamwork skills. Looking to add value by building efficient solutions.
+    skills:
+      - label: Programming Languages
+        details: C (Advanced), Java (Intermediate), Python (Intermediate), JavaScript, TypeScript, OCaml
+      - label: Frontend & Mobile Development
+        details: Next.js, React, React Native, Astro, Tailwind CSS, HTML5
+      - label: Backend, Testing & DevOps
+        details: Node.js, Bun, WebSockets, Docker, Linux, Git, pnpm
     education:
-      - institution: University of A Coruña
+      - institution: Universidade da Coruña
         area: Computer Engineering, Computing
         degree: BS
         start_date: 2023-09
       - institution: Linnaeus University
-        area: Erasmus Program, Computer Science
+        area: Computer Science (Erasmus Program)
         degree: BS
         start_date: 2025-09
         end_date: 2026-06
-      - institution: University of Santiago de Compostela
-        area: STEMbach, Mathematics and Computer Science
-        degree: HS
+      - institution: Universidade de Santiago de Compostela
+        area: STEMbach in Mathematics and Computer Science
         start_date: 2021-09
         end_date: 2023-06
-        highlights:
-          - "Score: Completed"
       - institution: IES Ramón Cabanillas
-        area: Baccalaureate, Science and Technology
+        area: Science and Technology
         degree: HS
         start_date: 2021-09
         end_date: 2023-06
         highlights:
-          - "Score: 9.05/10"
+          - "Grade: 9.05/10"
+    projects:
+      - name: "[RealOrAI](https://github.com/TeenBiscuits/RealOrAI)"
+        summary: Fullstack Developer. Multiplayer game where players must distinguish between real and AI-generated photographs.
+        start_date: 2025-12
+        end_date: 2025-12
+        highlights:
+          - Developed with Next.js, TypeScript, and Bun, implementing multilingual support and real-time connection via WebSockets.
+          - Images sourced using Unsplash and Google AI Studio APIs.
+          - Over 180 unique visitors in a single month.
+      - name: "[Pásame el Código](https://pc.pablopl.dev)"
+        summary: Frontend Developer & Maintainer. Open-source website providing academic resources for Computer Engineering.
+        start_date: 2024-10
+        highlights:
+          - Architecture built with Astro and Starlight, achieving optimal web performance and maximum accessibility.
+          - Successfully scaled to support and manage over 100 recurring unique monthly visitors.
+      - name: "[MandaRef](https://github.com/TeenBiscuits/MandaRef)"
+        summary: Mobile Developer. Native mobile application integrating Inditex's Visual Search API to find clothing items.
+        start_date: 2025-02
+        end_date: 2025-02
+        highlights:
+          - Built with React Native, Expo, and TypeScript, ensuring a fluid cross-platform user experience.
+          - Developed during HackUDC 2025, efficiently tackling the challenge of identifying clothing seen on social media.
+      - name: "[Personal Blog](https://github.com/TeenBiscuits/Blog)"
+        summary: Personal Project. Technical blog developed with Astro to publish articles on development and technology.
+        start_date: 2025-11
+      - name: "[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)"
+        summary: Interactive puzzle minigame developed in HTML5.
+        start_date: 2024-02
+        end_date: 2024-02
+        highlights:
+          - Awarded the GPUL x INDITEX Tech Prize for the most original project at HackUDC 2024, standing out among more than 130 participants.
+      - name: "[Pro2324](https://github.com/TeenBiscuits/Pro2324)"
+        summary: Open-source web repository created to share class notes and solved exercises in C.
+        start_date: 2024-01
+        end_date: 2024-10
     experience:
       - company: Bar O Pósito
         position: Waiter (Full Time)
         location: Cambados, Spain
-        summary:
-          All work experience is valuable. My experience may be limited, but
-          it is honest. In this job I didn’t use any framework, but I learned to work
-          hard facing the public and to adapt to high-stress situations.
+        summary: All work experience is important, my experience is little, but it is honest. In this job I did not use any framework but I learned to work hard dealing with the public and adapt to high stress situations.
         start_date: 2025-07
         end_date: 2025-08
-    projects:
-      - name: '["Pásame el Código"](https://pc.pablopl.dev)'
-        summary:
-          An open-source website with notes and solved exercises from the different
-          subjects that make up the Computer Engineering degree at the University of
-          A Coruña. Derived from my initial project Pro2324 due to the limitations of
-          using a documentation program, I decided to create a site dedicated to the
-          idea of sharing course notes and exercises in the most convenient way possible.
-          Based on the Starlight template, I created a site in Astro that I currently
-          maintain and continually try to improve.
-        start_date: 2024-10
-        highlights:
-          - Personal Project
-      - name: "[MandaRef](https://github.com/TeenBiscuits/MandaRef)"
-        summary:
-          This project, developed during HackUDC 2025, stems from the idea that
-          users can find the clothes they see in a TikTok video or any other social
-          network with just a screenshot, or by searching text with a description of
-          what they want. To achieve this, we built a native mobile application in React,
-          leveraging Inditex’s Visual Search API, which, using an image or text, finds
-          that same garment and/or related items.
-        start_date: 2025-02
-        end_date: 2025-02
-        highlights:
-          - HackUDC 2025
-      - name: "[Pro2324](https://github.com/TeenBiscuits/Pro2324)"
-        summary:
-          A small open-source website I built in my first year and maintained,
-          with small contributions from classmates, to help others understand and pass
-          Programming 1 and 2. The site’s content was written mostly by me and included
-          detailed notes as well as hundreds of examples and solved exercises in the
-          C programming language. It was a small project, but one I look back on fondly.
-        start_date: 2024-01
-        end_date: 2024-10
-        highlights:
-          - Personal Project
-      - name: "[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)"
-        summary:
-          A small HTML5 puzzle minigame created for HackUDC 2024. Winner of the
-          GPUL x INDITEX Tech Award for the most original project.
-        start_date: 2024-02
-        end_date: 2024-02
-        highlights:
-          - HackUDC 2024
-      - name: Cryptography
-        summary:
-          The goal of this work is to learn and understand the basic concepts
-          of the RSA system to be able to send messages securely. First, to understand
-          RSA, we will cover the mathematical foundations that support it and focus
-          on its effectiveness in relation to the time required to break it. In addition,
-          we will put the algorithm into practice with a theoretical construction. Finally,
-          we will discuss why quantum computers can break this system and pose a current
-          risk.
-        start_date: 2021-09
-        end_date: 2023-06
-        highlights:
-          - STEMbach Project
-    volunteer_experience:
+    volunteering:
       - company: Spanish Red Cross
-        position: Volunteer
+        position: Volunteer (Relief and Emergencies)
         location: A Coruña, Spain
-        summary: Volunteer in the Emergency and Relief department in A Coruña.
         start_date: 2024-11
+        highlights:
+          - Logistical support and assistance in preventive events, ensuring the safety and well-being of attendees.
+          - Teamwork under pressure to apply rapid response protocols in emergency situations.
     certificates:
       - name: B2 First (Score 174)
         summary: Cambridge English
-      - name: Driving License B
-        summary: Spanish Directorate-General for Traffic
+        date: 2022-06
+      - name: B Driving License
+        summary: General Directorate of Traffic
+        date: 2023-01
     languages:
       - label: English
-        details: Full Professional Proficiency
+        details: Full professional proficiency
       - label: Spanish
-        details: Native or Bilingual Proficiency
+        details: Native or bilingual proficiency
+      - label: Galician
+        details: Native or bilingual proficiency
 design:
-  theme: classic
+  theme: harvard
   typography:
-    font_size:
-      body: 11pt
+    alignment: left
+  page:
+    show_footer: false
 locale:
   language: english

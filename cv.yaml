@@ -11,34 +11,70 @@ cv:
       username: pabloportaslopez
   sections:
     sobre_mi:
-      - Soy Pablo Portas López, estudiante de Ingeniería Informática en la Universidad
-        da Coruña, actualmente de Erasmus en la Linnaeus University. Me apasiona el
-        mundo de la tecnología (es mi hobby y ahora mi carrera profesional) y estoy
-        comprometido con el código abierto.
+      - Estudiante de Grado en Ingeniería Informática en la UDC, actualmente de Erasmus en la Linnaeus University. Apasionado por el desarrollo de software y el código abierto. Orientado a la resolución de problemas técnicos, con gran capacidad de adaptación y trabajo en equipo. Busco aportar valor mediante la creación de soluciones eficientes.
+    habilidades:
+      - label: Lenguajes de Programación
+        details: C (Avanzado), Java (Intermedio), Python (Intermedio), JavaScript, TypeScript, OCaml
+      - label: Frontend y Desarrollo Mobile
+        details: Next.js, React, React Native, Astro, Tailwind CSS, HTML5
+      - label: Backend, Testing y DevOps
+        details: Node.js, Bun, WebSockets, Docker, Linux, Git, pnpm
     educacion:
       - institution: Universidade da Coruña
         area: Ingeniería Informática, Computación
-        degree: GII
+        degree: Gdo.
         start_date: 2023-09
       - institution: Linnéuniversitetet
-        area: Erasmus Program, Computer Science
+        area: Computer Science (Programa Erasmus)
         degree: BS
         start_date: 2025-09
         end_date: 2026-06
       - institution: Universidade de Santiago de Compostela
-        area: STEMbach, Matemáticas e Informática
-        degree: BCT
+        area: STEMbach en Matemáticas e Informática
         start_date: 2021-09
         end_date: 2023-06
-        highlights:
-          - "Nota: Superado"
       - institution: IES Ramón Cabanillas
-        area: Bachillerato, Ciencias y Tecnología
-        degree: BCT
+        area: Ciencias y Tecnología
+        degree: Br.
         start_date: 2021-09
         end_date: 2023-06
         highlights:
           - "Nota: 9,05"
+    proyectos:
+      - name: "[RealOrAI](https://github.com/TeenBiscuits/RealOrAI)"
+        summary: Desarrollador Fullstack. Juego multijugador en el que los jugadores deben distinguir entre fotografías reales y generadas por IA.
+        start_date: 2025-12
+        end_date: 2025-12
+        highlights:
+          - Desarrollado con Next.js, TypeScript y Bun, implementando soporte multilingüe y conexión en tiempo real vía WebSockets.
+          - Imágenes obtenidas mediante el uso de las APIs de Unsplash y Google AI Studio.
+          - Más de 180 visitantes únicos en un solo més
+      - name: "[Pásame el Código](https://pc.pablopl.dev)"
+        summary: Desarrollador Frontend y Mantenedor. Sitio web open-source de recursos académicos para el Grado en Ingeniería Informática.
+        start_date: 2024-10
+        highlights:
+          - Arquitectura construida con Astro y Starlight, logrando un rendimiento web óptimo y máxima accesibilidad.
+          - Escalado exitoso del proyecto para soportar y gestionar a más de 100 visitantes únicos mensuales de forma recurrente.
+      - name: "[MandaRef](https://github.com/TeenBiscuits/MandaRef)"
+        summary: Desarrollador Mobile. Aplicación móvil nativa que integra la API de Visual Search de Inditex para encontrar prendas de ropa.
+        start_date: 2025-02
+        end_date: 2025-02
+        highlights:
+          - Construida con React Native, Expo y TypeScript, garantizando una experiencia de usuario fluida y multiplataforma.
+          - Desarrollada durante la HackUDC 2025, abordando eficientemente el reto de identificar prendas vistas en redes sociales.
+      - name: "[Blog Personal](https://github.com/TeenBiscuits/Blog)"
+        summary: Proyecto Personal. Blog desarrollado con Astro para publicar artículos sobre desarrollo y tecnología.
+        start_date: 2025-11
+      - name: "[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)"
+        summary: Minijuego de rompecabezas interactivo desarrollado en HTML5.
+        start_date: 2024-02
+        end_date: 2024-02
+        highlights:
+          - Galardonado en HackUDC 2024 con el Premio GPUL x INDITEX Tech al proyecto más original destacando entre más de 130 participantes.
+      - name: "[Pro2324](https://github.com/TeenBiscuits/Pro2324)"
+        summary: Repositorio web de código abierto creado para compartir apuntes y ejercicios resueltos en C.
+        start_date: 2024-01
+        end_date: 2024-10
     experiencia:
       - company: Bar O Pósito
         position: Camarero (Jornada Completa)
@@ -49,85 +85,33 @@ cv:
           duro cara el público y adaptarse a situaciones de alto estrés.
         start_date: 2025-07
         end_date: 2025-08
-    proyectos:
-      - name: "[Pásame el Código](https://pc.pablopl.dev)"
-        summary:
-          Una web open source con apuntes y ejercicios resueltos de las diferentes
-          asignaturas que componen el Grado de Enxeñería Informática da Universidade
-          da Coruña. Derivado de mi proyecto inicial Pro2324 por las limitaciones de
-          usar un programa de documentación, decidí crear un sitio dedicado a la idea
-          de compartir apuntes y ejercicios de la carrera de la manera más cómoda posible.
-          Basándome en la plantilla Starlight creé un sitio en Astro que mantengo actualmente
-          y que trato de mejorar constantemente.
-        start_date: 2024-10
-        highlights:
-          - Proyecto Personal
-      - name: "[MandaRef](https://github.com/TeenBiscuits/MandaRef)"
-        summary:
-          Este proyecto realizado durante la HackUDC 2025 surge de la idea de
-          que los usuarios, puedan encontrar la ropa que ven en un vídeo de Tik Tok
-          o cualquier otra red social, tan solo con una captura de pantalla o buscando
-          por texto con una descripción ded lo que quieren. Para ello, hemos creado
-          una aplicación móvil nativa en React, apoyándonos en la API de Visual Search
-          de Inditex, en la cual, mediante una imagen o un texto, encontramos esa misma
-          prenda y/o prendas relacionadas con ella.
-        start_date: 2025-02
-        end_date: 2025-02
-        highlights:
-          - HackUDC 2025
-      - name: "[Pro2324](https://github.com/TeenBiscuits/Pro2324)"
-        summary:
-          Una pequeña página web open source que construí en primero de carrera
-          y mantuve, con pequeñas contribuciones de compañeros de carrera, para ayudar
-          a otros a entender y superar las asignaturas de Programación 1 y 2. El contenido
-          de la web fue escrito en su amplia mayoría por mi, contaba tanto con apuntes
-          detallados como con cientos de ejemplos y ejercicios resueltos en el lenguaje
-          de programación C. Fue un proyecto pequeño pero que guardo con cariño.
-        start_date: 2024-01
-        end_date: 2024-10
-        highlights:
-          - Proyecto Personal
-      - name: "[CronoSquare](https://github.com/TeenBiscuits/CronoSquare)"
-        summary:
-          Un pequeño minijuego de rompecabezas creado en HTML5 para la HackUDC
-          2024. Ganador del Premio GPUL x INDITEX Tech al proyecto más original.
-        start_date: 2024-02
-        end_date: 2024-02
-        highlights:
-          - HackUDC 2024
-      - name: Criptografía
-        summary:
-          El objetivo de este trabajo es conocer y comprender los conceptos básicos
-          del sistema RSA para poder enviar mensajes de forma segura. En primer lugar,
-          para entender el RSA recogeremos los fundamentos matemáticos que lo sustentan
-          y nos centraremos en su eficacia en relación al tiempo necesario para romperlo.
-          Además, pondremos en práctica el algoritmo con una construcción teórica. Finalmente,
-          se discutirá por qué las computadoras cuánticas pueden romper este sistema
-          y suponer un riesgo actual.
-        start_date: 2021-09
-        end_date: 2023-06
-        highlights:
-          - Proyecto de STEMbach
     voluntariado:
       - company: Cruz Roja Española
-        position: Voluntario
+        position: Voluntario (Socorros y Emergencias)
         location: A Coruña, España
-        summary: Voluntario en el departamento de Socorros y Emergencias de A Coruña.
         start_date: 2024-11
+        highlights:
+          - Asistencia y apoyo logístico en eventos preventivos, garantizando la seguridad y el bienestar de los asistentes.
+          - Trabajo en equipo bajo presión para aplicar protocolos de respuesta rápida en situaciones de necesidad.
     certificados:
       - name: B2 First (Score 174)
         summary: Cambridge English
+        date: 2022-06
       - name: Permiso de Conducción B
         summary: Dirección General de Tráfico
+        date: 2023-01
     idiomas:
-      - label: English
-        details: Full Professional Proficiency
-      - label: Spanish
-        details: Native or Bilingual Proficiency
+      - label: Inglés
+        details: Competencia profesional completa
+      - label: Español
+        details: Competencia nativa o bilingüe
+      - label: Gallego
+        details: Competencia nativa o bilingüe
 design:
-  theme: classic
+  theme: harvard
   typography:
-    font_size:
-      body: 11pt
+    alignment: left
+  page:
+    show_footer: false
 locale:
   language: spanish
