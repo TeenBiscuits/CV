@@ -54,6 +54,7 @@ cv:
         start_date: 2024-10
         highlights:
           - Architecture built with Astro and Starlight, achieving optimal web performance and maximum accessibility.
+          - More than 15 contributors and 24 stars in GitHub
           - Successfully scaled to support and manage over 100 recurring unique monthly visitors.
       - name: "[MandaRef](https://github.com/TeenBiscuits/MandaRef)"
         summary: Mobile Developer. Native mobile application integrating Inditex's Visual Search API to find clothing items.
